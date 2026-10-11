@@ -1,0 +1,31 @@
+PROMPT AGENTE DESARROLLADOR
+Desarrolla en Java un programa por consola que determine si dos vectores de números enteros son iguales. 
+Solicita al usuario la longitud y los elementos de cada vector. Dos vectores deben considerarse iguales 
+únicamente si tienen la misma longitud y todos los elementos de las mismas posiciones coinciden; el orden 
+de los elementos importa. Si las longitudes son distintas, informa que los vectores son diferentes sin 
+comparar sus elementos. Si las longitudes coinciden, compara los elementos posición por posición y finaliza 
+la comparación apenas encuentre una diferencia; si llega al final sin encontrarla, informa que los vectores son iguales. 
+Separa la lógica de comparación de la interacción por consola.
+
+PROMT AGENTE DOCUMENTADOR
+Documenta el codigo de manera clara y coherente
+
+PROMT AGENTE EXPLICADOR
+Realiza un analisis del mejor y peor caso, explicalos con sus respectivas complejidades temporales
+
+RESPUESTA (AGENTE EXPLICADOR)
+
+ANALISIS DEL MEJOR Y PEOR CASO
+
+La función sonIguales compara primero las longitudes de los vectores. Si tienen la misma longitud, 
+compara los elementos en las posiciones correspondientes y termina en cuanto encuentra una diferencia.
+
+Mejor caso: O(1). Ocurre cuando las longitudes son distintas, porque basta compararlas para concluir que 
+los vectores no son iguales. También ocurre si tienen la misma longitud pero sus primeros elementos son diferentes: 
+solo se realiza una comparación de elementos.
+
+Peor caso: O(n), donde n es la longitud de los vectores cuando ambos tienen el mismo tamaño. 
+Sucede cuando todos los elementos coinciden o cuando la única diferencia está en la última posición. 
+En ambos casos se deben revisar las n posiciones antes de poder decidir el resultado.
+
+
