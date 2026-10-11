@@ -1,0 +1,49 @@
+PROMT AGENTE DESARROLLADOR
+Desarrolla en Java un programa por consola que recorra un vector de enteros y cuente cuántas veces 
+aparece cada valor. El programa debe pedir la cantidad de elementos del vector, validar que no sea 
+negativa, leer los valores ingresados y luego recorrer el arreglo para contabilizar las ocurrencias 
+de cada elemento. Debe mostrar, para cada valor distinto, cuántas veces aparece en el vector. 
+Si el vector está vacío, debe indicar que no hay elementos para contar. La lógica de conteo debe 
+separarse de la interacción por consola para poder reutilizarla en otras partes del programa.
+
+
+PROMT AGENTE DOCUMENTADOR
+realiza la documentacion del codigo de manera clara y coherente
+
+
+PROMT AGENTE EXPLICADOR
+Explica a partir del siguiente codigo. Por que se debe recorrer el vector entero y haz un analisis 
+de la complejidad temporal y espacial que presenta el mismo.
+
+RESPUESTA (AGENTE EXPLICADOR)
+
+EXPLICACION DEL PORQUE SE DEBE RECORRER EL VECTOR COMPLETO
+Para contar cuántas veces aparece cada valor en un arreglo, es necesario revisar cada posición del vector,
+porque cada elemento puede contribuir a la frecuencia de un valor distinto. Si solo se analiza una parte del
+arreglo, se corre el riesgo de ignorar apariciones reales y obtener un resultado incompleto o incorrecto.
+
+En el código, se utiliza un bucle for-each que recorre cada valor del arreglo y luego se actualiza un mapa:
+frecuencias.put(valor, frecuencias.getOrDefault(valor, 0) + 1);
+Esto significa que por cada elemento leído, se consulta la cantidad actual asociada a ese valor y se incrementa
+en 1. De esta manera, al terminar el recorrido, cada clave del mapa representa un valor distinto y cada valor
+asociado indica cuántas veces apareció en el vector.
+
+Si el vector fuese [1, 2, 3, 3, 3], al recorrerlo completo se observa que el valor 1 aparece 1 vez, el valor 2
+aparece 1 vez y el valor 3 aparece 3 veces. Si se recorriera solo parte del arreglo, se perderían datos y no se
+podría garantizar la frecuencia exacta de todos los elementos.
+
+ANALISIS DE COMPLEJIDAD
+Sea n la cantidad de elementos del vector y k la cantidad de valores distintos que contiene.
+
+- Complejidad temporal: el algoritmo recorre el vector una sola vez, por lo que el costo principal es O(n).
+	En cada iteración, la operación de acceso y actualización en el mapa HashMap tiene costo promedio O(1),
+	por lo que el tiempo total es O(n) en promedio. En el peor caso, si hay muchas colisiones, puede aumentar,
+	pero en la práctica con HashMap la complejidad esperada sigue siendo lineal.
+
+- Complejidad espacial: el programa guarda en memoria una entrada por cada valor distinto del vector, por lo que
+	requiere O(k) espacio. Como k puede llegar a ser n en el peor caso, la memoria total puede ser O(n).
+	Además, el arreglo original ocupa O(n) espacio si se considera el vector ingresado, aunque esta parte depende
+	del problema y del contexto de uso.
+
+En resumen, la estrategia es eficiente porque procesa cada elemento del arreglo una sola vez y usa una estructura
+de datos que permite contar frecuencias de forma directa y ordenada.
