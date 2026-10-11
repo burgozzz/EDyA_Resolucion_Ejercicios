@@ -1,0 +1,96 @@
+PROMT AGENTE DESARROLLADOR(INVERTIR_VECTOR)
+Desarrolla en Java un programa por consola en el archivo Invertir_Vector.java, 
+dentro de la clase Invertir_Vector. Implementa un método reutilizable invertirInSitu 
+que reciba un vector de enteros y lo invierta modificando el mismo arreglo, mediante 
+intercambios entre sus extremos y avanzando hacia el centro. El método debe ocuparse 
+únicamente de la lógica de inversión: no debe leer datos ni imprimir resultados. 
+Separa esa lógica de la interacción por consola, que debe solicitar y validar la cantidad
+de elementos, leer el vector y mostrarlo antes y después de invertirlo. No crees otro 
+vector ni uses memoria adicional que crezca con el tamaño de la entrada. Verifica que el vector
+no sea nulo, y en caso de serlo mostrar un mensaje, diciendo que el mismo no se puede invertir
+
+PROMT AGENTE DESARROLLADOR(INVERTIR_VECTOR)
+Desarrolla en Java un programa por consola en el archivo Invertir_Vector_MemAdicional.java, 
+dentro de la clase Invertir_Vector_MemAdicional. Implementa un método reutilizable 
+invertirConMemoriaAdicional que reciba un vector de enteros, cree y devuelva otro vector 
+con los elementos en orden inverso, sin modificar el vector original. El método debe ocuparse
+únicamente de la lógica de inversión: no debe leer datos ni imprimir resultados. Separa esa lógica 
+de la interacción por consola, que debe solicitar y validar la cantidad de elementos, leer el vector 
+y mostrar el original y el vector invertido. Considera los casos de vector vacío y de un solo elemento
+
+PROMT AGENTE DOCUMENTADOR
+Realiza una documentacion de los codigos, de manera clara y coherente
+
+PROMPT AGENTE EXPLICADOR
+Quiero que realices una comparacion entre los metodos utilizados para invertir un vector, indica 
+las ventajas y desventajas. Inidca las complejidades temporales y espaciales que presenta cada metodo
+
+RESPUESTA (AGENTE EXPLICADOR)
+
+Los dos métodos para invertir un vector cumplen la misma misión: devolver el arreglo en orden inverso. La diferencia está en cómo lo hacen y en cuánto espacio extra consumen.
+
+1) Método con vector auxiliar
+
+Este enfoque crea un nuevo arreglo del mismo tamaño y llena sus posiciones desde el final del vector original hacia el principio.
+
+Ejemplo:
+Original: [10, 20, 30, 40]
+Resultado: [40, 30, 20, 10]
+
+Se recorre el arreglo original una vez y se copia cada elemento en la posición correspondiente del arreglo nuevo.
+
+Ventajas:
+- Mantiene intacto el vector original.
+- Es sencillo de implementar y de comprender.
+- Es útil cuando necesitamos conservar los datos originales y además obtener la versión invertida.
+
+Desventajas:
+- Requiere memoria adicional de tamaño O(n).
+- Si el vector es muy grande, la memoria consumida puede ser significativa.
+
+Complejidad:
+- Tiempo: Θ(n)
+- Espacio adicional: Θ(n)
+
+2) Método in situ
+
+Este enfoque modifica el mismo arreglo original sin crear otro vector. Usa dos índices: uno al inicio y otro al final. Se intercambian valores mientras avanzan hacia el centro.
+
+Ejemplo:
+Original: [10, 20, 30, 40]
+Paso 1: intercambia 10 y 40 -> [40, 20, 30, 10]
+Paso 2: intercambia 20 y 30 -> [40, 30, 20, 10]
+
+Ventajas:
+- No necesita memoria extra.
+- Es más eficiente en uso de memoria.
+- Es ideal cuando no hace falta conservar el arreglo original.
+
+Desventajas:
+- Modifica el vector original, por lo que se pierde el estado previo.
+- Si se necesita conservar la versión original, hay que copiarla antes de invertirla.
+
+Complejidad:
+- Tiempo: Θ(n)
+- Espacio adicional: Θ(1)
+
+Comparación general
+
+Ambos métodos tienen la misma complejidad temporal:
+- Θ(n)
+
+La diferencia principal está en el espacio:
+- Con auxiliar: Θ(n)
+- In situ: Θ(1)
+
+En otras palabras, ambos recorren todo el vector una vez, pero uno usa más memoria y el otro reutiliza el mismo arreglo.
+
+Cuándo elegir cada uno:
+- Si necesitas conservar el vector original, el método con auxiliar es más conveniente.
+- Si buscas ahorrar memoria y puedes modificar el arreglo original, el método in situ es mejor.
+
+Caso de vector vacío o de un solo elemento:
+- Si el vector está vacío, no hay elementos para intercambiar.
+- Si el vector tiene un solo elemento, tampoco hay intercambio posible.
+
+En ambos casos, el resultado sigue siendo el mismo vector, sin cambios funcionales.

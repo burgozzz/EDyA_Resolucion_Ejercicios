@@ -1,4 +1,4 @@
-package GUIA_Analisis_Algoritmos.Ejercico_6;
+package GUIA_Analisis_Algoritmos.Ejercicio_6;
 
 import java.util.Scanner;
 
