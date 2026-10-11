@@ -1,0 +1,39 @@
+AGENTE DESARROLLADOR - PROMPT
+Desarrolla en Java un programa interactivo por consola que busque un valor entero en un vector
+desordenado. El programa debe pedir la cantidad de elementos, leer los valores del vector y luego
+pedir el valor que se desea buscar. Acepta enteros y valida las entradas; la cantidad de elementos
+no puede ser negativa. Para el valor buscado, permite ingresar un entero o la palabra "null".
+
+Implementa la búsqueda recorriendo el vector secuencialmente desde el principio y deteniéndola en
+la primera coincidencia. El programa debe mostrar si encontró el valor, su índice basado en cero y
+cuántas posiciones recorrió, incluida la posición coincidente. Si no lo encuentra, debe avisarlo y
+mostrar que recorrió todo el vector. Si se ingresa "null" como valor buscado, debe mostrar el aviso
+"No se permiten valores nulos" sin terminar con una excepción no controlada. Si el vector está
+vacío, debe indicar que el valor no se encuentra y que se recorrieron cero posiciones.
+
+Separa la lógica de búsqueda de la interacción por consola para que la búsqueda pueda reutilizarse.
+No agregues un archivo de pruebas automatizadas.
+
+AGENTE DOCUMENTADOR PROMT
+Documente el siguient archivo de manera coherente
+
+AGENTE EXPLICADOR PROMT
+Explica por que la estrategia utilizada es la correcta, y analiza el mejor caso posible, el peor caso
+y el promedio
+
+RTA (AGENTE EXPLICADOR):
+La estrategia adecuada es la busqueda secuencial: como el vector está desordenado, no hay información que 
+permita descartar posiciones sin examinarlas. El método compara cada elemento con el valor buscado y se detiene 
+en la primera coincidencia. Ordenar antes de buscar no ayuda para una única búsqueda, porque ordenar suele 
+costar O(nlog⁡ n), mientras que recorrer el vector cuesta como máximo O(n).
+
+Mejor caso: el valor está en la primera posición. Se inspecciona una posición: O(1).
+
+Peor caso: el valor está al final o no aparece. Se inspeccionan las n posiciones: O(n).
+
+Caso promedio: si el valor está presente y puede aparecer con igual probabilidad en cualquier posición, 
+se inspeccionan en promedio (n+1)/2; por tanto, es O(n). Si puede no aparecer, el promedio exacto depende
+de la probabilidad de que esté presente, pero sigue siendo O(n) bajo una distribución general.
+
+El conteo que devuelve el método incluye la posición coincidente; si no encuentra el valor, cuenta todo el vector.
+Si el vector está vacío, devuelve cero posiciones recorridas. La búsqueda usa espacio adicional O(1).
