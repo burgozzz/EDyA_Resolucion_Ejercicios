@@ -1,0 +1,28 @@
+AGENTE DOCUMENTADOR PROMT
+Haz un codigo, para encontrar el valor minimo de un vector que no se encuentra ordenado. 
+El vector es de valores enteros, si esta vacio que se retorne que esta vacio el mismo, 
+si hay dos repetidos el valor no cambia. La logica que veo correcta es la de comparar 
+los valores del vector uno por uno. El metodo consta con una complejidad temporal de O(n) y espacial de O(1)
+
+AGENTE COMENTADOR PROMT
+Documenta el archivo adjunto, de manera coherente
+
+AGENTE EXPLICADOR PROMT
+Quiero que me explique a partir del codigo generado, 
+por que la estrategia utilizada es la mejor y por que no es 
+necesario ordenar el vector
+
+RTA (AGENTE EXPLICADOR):
+La estrategia usada es la más conveniente para encontrar únicamente el mínimo: recorrer el vector una vez y 
+conservar el menor valor visto hasta el momento. Como el vector no está ordenado, cualquier elemento que todavía 
+no hayamos revisado podría ser menor; por eso, en el caso general, tenemos que inspeccionarlos todos.
+
+En encontrarMinimo, minimo empieza con el primer elemento del vector. Luego, el ciclo compara cada elemento restante con ese 
+valor y lo actualiza si encuentra uno menor. Así, después de revisar cada posición, minimo contiene el menor valor entre los 
+elementos procesados. Si hay repetidos, la comparación estricta < deja el valor igual, como se espera cuando solo importa el 
+mínimo y no su posición.
+
+No es necesario ordenar el vector: ordenar resuelve un problema más amplio, establecer el orden de todos sus elementos, cuando solo necesitamos conocer uno. Una ordenación típica cuesta 
+𝑂(𝑛 log 𝑛), frente a 𝑂(𝑛)
+O(n) para el recorrido. Además, la estrategia actual no necesita memoria adicional proporcional al tamaño del vector, así que su espacio es 𝑂(1).
+Para entradas generales, la búsqueda es óptima en tiempo: ningún elemento se puede descartar sin revisarlo, porque podría contener el mínimo.
