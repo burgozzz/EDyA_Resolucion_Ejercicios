@@ -1,0 +1,39 @@
+PROMPT AGENTE DESARROLLADOR
+Desarrolla un codigo donde se utilice el ordenamiento BubbleSort 
+para un vector de numeros enteros. El mismo debe tener una seccion 
+de interaccion por consola separada de la logica. No puede permitir 
+valores nulos dentro del vector ni vectores nulos. El mismo debe tener contabilizar
+las comparaciones e intercabios que se realizan en el metodo
+
+PROMPT AGENTE DOCUMENTADOR
+Documenta el codigo generado de manera clara y coherente
+
+PROMPT AGENTE EXPLICADOR
+Explica por que el codigo generado resulta adecuado para fines didacticos o conjunto de 
+datos pequeños. Analisa la complejidad temporales que conlleva utilizar el metodo de BublleSort
+
+RESPUESTA(AGENTE EXPLICADOR)
+
+El codigo generado resulta adecuado para fines didácticos porque su lógica es sencilla de seguir y permite 
+visualizar claramente cómo funciona el ordenamiento paso a paso. Bubble Sort compara elementos contiguos y, 
+cuando un valor es mayor que el siguiente, los intercambia. Esa estructura es fácil de entender para estudiantes
+que están aprendiendo algoritmos de ordenamiento, ya que la idea central se puede observar directamente en los 
+dos bucles anidados.
+
+La contabilización de comparaciones e intercambios es otra ventaja educativa: permite observar de forma cuantitativa cómo se comporta la solución. 
+En lugar de solo obtener un vector ordenado, el estudiante puede ver cuántas veces se compararon elementos y cuántas veces hubo que moverlos de posición. 
+Esto ayuda a comprender mejor el costo real del algoritmo.
+
+En cuanto a la complejidad temporal, Bubble Sort tiene un costo de O(n^2) en el peor caso y en el caso promedio. Esto ocurre porque 
+para cada posición del vector se recorre gran parte del arreglo nuevamente. Si el vector tiene n elementos, el algoritmo realiza 
+aproximadamente n * (n - 1) / 2 comparaciones. Por eso, su crecimiento es cuadrático.
+
+En el mejor caso, cuando el vector ya está ordenado, Bubble Sort puede realizar menos comparaciones y llegar a O(n), si se implementa con una mejora 
+que detecte si no hubo intercambios en una pasada. Sin embargo, en la versión básica, el análisis más frecuente es considerar el peor caso, que es O(n^2).
+
+La complejidad espacial es O(1), porque el algoritmo ordena los elementos in-place, es decir, no necesita crear un arreglo auxiliar ni estructuras adicionales. 
+Solo usa variables temporales para realizar el intercambio y para llevar la cuenta de operaciones.
+
+Por estas razones, el algoritmo es útil para explicar fundamentos de ordenamiento y para trabajar con conjuntos pequeños. Cuando la cantidad de datos es 
+reducida, la simplicidad del código y la claridad de la lógica compensan su costo computacional. Sin embargo, para volúmenes grandes de información, 
+Bubble Sort deja de ser práctico frente a algoritmos más eficientes como Quick Sort, Merge Sort o Heap Sort.
