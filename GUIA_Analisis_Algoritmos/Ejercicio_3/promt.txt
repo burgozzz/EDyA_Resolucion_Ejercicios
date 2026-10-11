@@ -1,0 +1,32 @@
+PORMT AGENTE DESARROLLADOR
+Desarrolla en Java un programa interactivo por consola para buscar un valor entero en un vector ordenado usando búsqueda binaria. 
+Debe pedir la cantidad de elementos, validar que no sea negativa, leer los valores ordenados, pedir el valor a buscar y mostrar si existe, 
+su índice y cuántas comparaciones se realizaron. Si el vector está vacío, debe indicar que no puede buscarse
+
+PROMT AGENTE DOCUMENTADOR
+realiza la documentacion del codigo de manera clara y coherente
+
+PROMT AGENTE EXPLICADOR
+Explica por qué la estrategia de búsqueda binaria es más eficiente que una búsqueda lineal cuando los datos están ordenados.
+Incluye además el análisis de complejidad temporal y espacial que conlleva esta estrategia.
+
+Respuesta esperada:
+La búsqueda binaria es más eficiente porque aprovecha la propiedad de orden del vector. En lugar de revisar cada elemento desde el inicio,
+se compara el valor buscado con el elemento central del rango actual. Si el valor es menor, se descarta la mitad derecha; si es mayor,
+se descarta la mitad izquierda. Esto reduce a la mitad el espacio de búsqueda en cada paso, por lo que se necesitan muchas menos comparaciones.
+
+En cambio, la búsqueda lineal recorre uno por uno todos los elementos del vector hasta encontrar el valor o llegar al final. Si el arreglo tiene
+n elementos, la línea puede llegar a revisar hasta n posiciones. Por eso, cuando los datos están ordenados, la búsqueda binaria es claramente
+superior, porque elimina grandes bloques de elementos sin revisarlos.
+
+Complejidad temporal:
+- Mejor caso: O(1), cuando el valor buscado está exactamente en el medio de la búsqueda inicial.
+- Peor caso: O(log n), porque el rango se divide por la mitad cada vez.
+- Caso promedio: O(log n), ya que el problema se reduce de forma exponencial en cada iteración.
+
+Complejidad espacial:
+- O(1), porque la búsqueda binaria usa solo variables auxiliares como índices y no requiere crear estructuras adicionales según el tamaño del vector.
+
+En resumen, la búsqueda binaria hace uso de la ordenación del arreglo para reducir drásticamente la cantidad de comparaciones, mientras que
+la búsqueda lineal no aprovecha ninguna información adicional y, por lo tanto, es menos eficiente en arreglos ordenados.
+
