@@ -1,0 +1,39 @@
+PROMT AGENTE DESARROLLADOR (MODO FOR)
+Desarrolla en Java un programa por consola que detecte si un vector de enteros 
+contiene elementos duplicados utilizando un enfoque con bucles anidados. 
+El programa debe pedir la cantidad de elementos del vector, validar que no sea negativa, 
+leer los valores ingresados y, luego, recorrer cada elemento comparándolo con el 
+resto del arreglo para detectar si existen valores repetidos. Debe mostrar si el vector 
+tiene duplicados o no, e indicar cuáles valores se repiten y cuántas veces aparecen 
+en caso de que existan. Si el vector no tiene duplicados, debe informar claramente que 
+no contiene elementos repetidos. La lógica de detección debe separarse de la interacción 
+por consola para poder reutilizar la funcionalidad en otras partes del programa
+
+PROMT AGENTE DESARROLLADOR (MODO HASHSET)
+Desarrolla en Java un programa por consola que detecte si un vector de enteros 
+contiene elementos duplicados utilizando una estructura de control de elementos vistos, como HashSet. 
+El programa debe pedir la cantidad de elementos del vector, validar que no sea negativa, leer los valores 
+ingresados y recorrer el arreglo registrando los elementos ya observados para identificar si un valor 
+aparece más de una vez. Debe mostrar si existen duplicados o no, e indicar cuáles valores se repiten y cuántas 
+veces aparecen cuando corresponda. Si no existen duplicados, debe informar que el vector no contiene elementos repetidos.
+La lógica de detección debe separarse de la interacción por consola para poder reutilizar la funcionalidad en 
+otras partes del programa.
+
+PROMT AGENTE DOCUMENTADOR
+realiza la documentacion de los codigos de manera clara y coherente
+
+PROMT AGENTE EXPLICADOR
+Explica la diferencia entre los dos métodos para detectar duplicados en un vector: el enfoque con bucles anidados y el enfoque con HashSet.
+Compara ambos teniendo en cuenta la complejidad temporal y espacial que utiliza cada método.
+
+La respuesta debe incluir lo siguiente:
+- En el método con bucles anidados, cada elemento se compara con el resto del vector, por lo que se realizan muchas comparaciones repetidas.
+- Esa estrategia tiene complejidad temporal O(n²), porque en el peor caso se comparan casi todos los elementos contra casi todos los demás.
+- El espacio adicional es O(1), ya que no se crean estructuras grandes según el tamaño del vector, solo se usan contadores o variables auxiliares.
+- En el método con HashSet, cada valor se revisa una vez y se controla si ya existe en el conjunto. Si el valor ya estaba, se cuenta como duplicado.
+- Esa estrategia tiene complejidad temporal promedio O(n), porque cada inserción o consulta en HashSet es constante en promedio.
+- El espacio adicional es O(n), porque el conjunto guarda los elementos distintos que aparecen en el vector para poder consultar si ya fueron vistos.
+- La diferencia principal es que el enfoque con bucles anidados es más simple y directo, pero más costoso cuando el vector crece.
+- El enfoque con HashSet es más eficiente en tamaño grande, aunque usa más memoria.
+- En conclusión, si se prioriza la simplicidad y el vector es pequeño, la solución con bucles anidados puede ser suficiente; 
+si se busca eficiencia y el vector puede ser grande, HashSet es la mejor opción.
