@@ -1,0 +1,59 @@
+PROMT AGENTE DESARROLLADOR
+Desarrolla un codigo que permita realizar la suma de cada elemento que se 
+encuentra dentro de una matriz, recorriendo una vez cada elemento y contabilizando las operaciones 
+realizadas.El mismo debe tener una interaccion por consola que determine el tamaño de la matriz y 
+la carga de valores aleatoria. El sistema debe verificar que no se ingresen tamaños 
+0 o nulos, en tal caso dar un mensaje con dato invalido. La logica debe estar separada
+de la interaccion por consola para reutilizar el codigo
+
+PROMT AGENTE DOCUMENTADOR
+Documenta el codigo generado de manera clara y coherente
+
+PROMPT AGENTE EXPLICADOR
+Realiza un analisis de la complejidad temporal que conlleva el metodo utilizado para sumar todos los elementos de una matriz
+
+RESPUESTA (AGENTE EXPLICADOR)
+
+El método utilizado para sumar todos los elementos de una matriz recorre cada celda mediante dos bucles anidados:
+
+for (int fila = 0; fila < matriz.length; fila++) {
+    for (int columna = 0; columna < matriz[fila].length; columna++) {
+        suma += matriz[fila][columna];
+        operaciones++;
+    }
+}
+
+Aquí se observa que:
+- el bucle exterior recorre las filas
+- el bucle interior recorre las columnas de cada fila
+- cada elemento de la matriz se visita exactamente una vez
+
+Si la matriz tiene m filas y n columnas, entonces el número total de elementos es m × n.
+
+Por lo tanto:
+- se realizan m × n accesos a elementos
+- se realizan m × n sumas
+- se incrementa la variable operaciones exactamente m × n veces
+
+En consecuencia, el tiempo de ejecución es proporcional al número total de elementos de la matriz.
+
+La complejidad temporal es:
+- Θ(m × n)
+
+Esto significa que el algoritmo es lineal respecto al tamaño total de la entrada.
+
+Si se quisiera describirlo en términos del número total de elementos N = m × n, entonces la complejidad también puede expresarse como:
+- Θ(N)
+
+Esto es correcto porque el algoritmo no hace ninguna búsqueda ni ramificación compleja; solo recorre la estructura completa y acumula resultados.
+
+La complejidad espacial auxiliar del método es:
+- Θ(1)
+
+Porque además de la variable suma, la variable operaciones y algunos contadores locales, no se crean estructuras adicionales que dependan del tamaño de la matriz.
+
+En resumen:
+- tiempo: Θ(m × n)
+- espacio auxiliar: Θ(1)
+
+Esto hace que este enfoque sea muy eficiente para este problema, ya que requiere recorrer toda la matriz una sola vez para obtener el resultado final.
