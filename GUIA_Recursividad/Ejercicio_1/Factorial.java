@@ -8,6 +8,12 @@
  * Cuando n=0 se retorna 1, y cuando n=1 se el resultado es 1. El problema se reduce hacia la multiplicacion reiterada
  * más sencilla, la cual es multiplicar por 1. Se deberian utilizar valores de pruebas pequeños ya que si se utilizan muy
  * grandes se podrian ocasionar un overflow.
+ * El caso base es: si n == 0 o n == 1, se devuelve 1 porque el factorial de 0 y 1 es 1.
+ * El caso recursivo es: factorial(n) = n * factorial(n - 1), donde cada llamada reduce el problema a una instancia
+ * más pequeña hasta llegar al caso base.
+ * La pila de llamadas se va acumulando con cada invocación: factorial(5) llama a factorial(4), que llama a factorial(3),
+ * y así sucesivamente hasta factorial(1), donde se resuelven las llamadas desde el fondo hacia arriba y se van
+ * combinando los resultados multiplicando por los valores que faltan.
  */
 package GUIA_Recursividad.Ejercicio_1;
 
