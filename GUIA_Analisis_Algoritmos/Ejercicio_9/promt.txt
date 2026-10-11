@@ -1,0 +1,59 @@
+PROMPT AGENTE DESARROLLADOR
+Reliza un codigo que permita encontrar el mayor valor dentro de una matriz. 
+La misma debe recorrer uno por uno cada elemento ya que no esta ordenada. 
+EL codigo debe tener un interaccion por consola que defina el tamaño de la matriz, 
+y carge los valores con numeros aleatorios, no debe permtir tamño 0 o nulo. 
+Por consola se debe mostrar la matriz y el valor mayor
+
+PROMPT AGENTE DOCUMENTADOR
+Documenta el codigo generado de manera coherente
+
+PROMPT AGENTE EXPLICADOR
+Explica por que es necesario recorrer todos los elementos de la matriz y realiza un analisis de la complejidad 
+temporal y espacial que conlleva utilizar el metodo utilizado en el codigo generado
+
+RESPUESTA (AGENTE EXPLICADOR)
+
+Es necesario recorrer todos los elementos de la matriz porque la estructura no está ordenada. A diferencia 
+de un vector ordenado, donde se puede aplicar una búsqueda más eficiente aprovechando la relación entre elementos, 
+en una matriz desordenada no existe ninguna regla que permita afirmar que el mayor valor se encuentra en una región 
+específica o en una posición determinada. Por ese motivo, el algoritmo debe inspeccionar cada celda para poder asegurar 
+que no se ha perdido un valor mayor.
+
+En el código, esto se realiza con dos bucles anidados:
+
+for (int fila = 0; fila < matriz.length; fila++) {
+    for (int columna = 0; columna < matriz[fila].length; columna++) {
+        if (matriz[fila][columna] > mayor) {
+            mayor = matriz[fila][columna];
+        }
+    }
+}
+
+El primer bucle recorre las filas y el segundo recorre las columnas. Cada vez que se encuentra un valor mayor que el actual 
+guardado en la variable mayor, se actualiza ese valor. Al finalizar la ejecución, la variable mayor contiene el máximo de la matriz.
+
+Este enfoque es imprescindible porque el problema exige una respuesta exacta: no basta con revisar solo algunos elementos, 
+ya que un valor mayor podría estar en cualquier posición. Si no se recorriera la totalidad de la matriz, existiría el riesgo 
+de devolver un valor incorrecto.
+
+Analisis de complejidad:
+
+- Complejidad temporal: El algoritmo visita cada elemento exactamente una vez. Si la matriz tiene m filas y n columnas, entonces 
+se realizan m x n comparaciones. Por lo tanto, la complejidad temporal es O(m x n).
+
+- En notación theta: el tiempo es Theta(m x n), porque en el peor caso y en el caso promedio se deben recorrer todas las posiciones.
+
+- Complejidad espacial: El programa usa una variable llamada mayor para almacenar el valor máximo encontrado y dos índices para recorrer 
+la matriz (fila y columna). Esto no depende del tamaño de la matriz, por lo que la complejidad espacial es O(1).
+
+En resumen, el método es correcto y seguro para matrices desordenadas, pero exige recorrer toda la estructura. La trade-off es clara: 
+se obtiene la respuesta exacta con un costo temporal lineal respecto a la cantidad total de elementos, y con un uso constante de memoria.
+
+Errores comunes:
+- No recorrer todas las filas o columnas.
+- Inicializar la variable mayor con un valor incorrecto.
+- Suponer que la matriz está ordenada cuando no lo está.
+- No validar que la matriz no sea nula o vacía.
+
+Esto explica por qué el enfoque de recorrido completo es la solución adecuada para este tipo de problema.
