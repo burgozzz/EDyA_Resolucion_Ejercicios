@@ -1,6 +1,6 @@
 /*
  * PROMPT UTILIZADO:
- * Implementa en Java el ejercicio 5 de la guía: ShellSort explicando los gaps.
+ * Implementa en Java ShellSort explicando los gaps.
  * El programa debe ordenar el arreglo {35, 12, 43, 8, 51, 7, 19, 3} usando ShellSort.
  * Utiliza una secuencia de gaps que comience en la mitad del tamaño del arreglo y se
  * reduzca a la mitad en cada etapa hasta llegar a 1.
