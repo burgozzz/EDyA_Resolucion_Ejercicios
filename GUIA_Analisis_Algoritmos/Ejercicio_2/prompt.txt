@@ -14,10 +14,10 @@ vacío, debe indicar que el valor no se encuentra y que se recorrieron cero posi
 Separa la lógica de búsqueda de la interacción por consola para que la búsqueda pueda reutilizarse.
 No agregues un archivo de pruebas automatizadas.
 
-AGENTE DOCUMENTADOR PROMT
+AGENTE DOCUMENTADOR PROMPT
 Documente el siguient archivo de manera coherente
 
-AGENTE EXPLICADOR PROMT
+AGENTE EXPLICADOR PROMPT
 Explica por que la estrategia utilizada es la correcta, y analiza el mejor caso posible, el peor caso
 y el promedio
 

@@ -7,10 +7,10 @@ comparar sus elementos. Si las longitudes coinciden, compara los elementos posic
 la comparación apenas encuentre una diferencia; si llega al final sin encontrarla, informa que los vectores son iguales. 
 Separa la lógica de comparación de la interacción por consola.
 
-PROMT AGENTE DOCUMENTADOR
+PROMPT AGENTE DOCUMENTADOR
 Documenta el codigo de manera clara y coherente
 
-PROMT AGENTE EXPLICADOR
+PROMPT AGENTE EXPLICADOR
 Realiza un analisis del mejor y peor caso, explicalos con sus respectivas complejidades temporales
 
 RESPUESTA (AGENTE EXPLICADOR)

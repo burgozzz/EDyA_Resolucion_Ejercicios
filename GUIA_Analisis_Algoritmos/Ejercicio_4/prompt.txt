@@ -1,4 +1,4 @@
-PROMT AGENTE DESARROLLADOR (MODO FOR)
+PROMPT AGENTE DESARROLLADOR (MODO FOR)
 Desarrolla en Java un programa por consola que detecte si un vector de enteros 
 contiene elementos duplicados utilizando un enfoque con bucles anidados. 
 El programa debe pedir la cantidad de elementos del vector, validar que no sea negativa, 
@@ -9,7 +9,7 @@ en caso de que existan. Si el vector no tiene duplicados, debe informar claramen
 no contiene elementos repetidos. La lógica de detección debe separarse de la interacción 
 por consola para poder reutilizar la funcionalidad en otras partes del programa
 
-PROMT AGENTE DESARROLLADOR (MODO HASHSET)
+PROMPT AGENTE DESARROLLADOR (MODO HASHSET)
 Desarrolla en Java un programa por consola que detecte si un vector de enteros 
 contiene elementos duplicados utilizando una estructura de control de elementos vistos, como HashSet. 
 El programa debe pedir la cantidad de elementos del vector, validar que no sea negativa, leer los valores 
@@ -19,10 +19,10 @@ veces aparecen cuando corresponda. Si no existen duplicados, debe informar que e
 La lógica de detección debe separarse de la interacción por consola para poder reutilizar la funcionalidad en 
 otras partes del programa.
 
-PROMT AGENTE DOCUMENTADOR
+PROMPT AGENTE DOCUMENTADOR
 realiza la documentacion de los codigos de manera clara y coherente
 
-PROMT AGENTE EXPLICADOR
+PROMPT AGENTE EXPLICADOR
 Explica la diferencia entre los dos métodos para detectar duplicados en un vector: el enfoque con bucles anidados y el enfoque con HashSet.
 Compara ambos teniendo en cuenta la complejidad temporal y espacial que utiliza cada método.
 

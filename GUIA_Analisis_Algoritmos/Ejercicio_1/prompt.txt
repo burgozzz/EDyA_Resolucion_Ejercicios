@@ -1,13 +1,13 @@
-AGENTE DOCUMENTADOR PROMT
+AGENTE DOCUMENTADOR PROMPT
 Haz un codigo, para encontrar el valor minimo de un vector que no se encuentra ordenado. 
 El vector es de valores enteros, si esta vacio que se retorne que esta vacio el mismo, 
 si hay dos repetidos el valor no cambia. La logica que veo correcta es la de comparar 
 los valores del vector uno por uno. El metodo consta con una complejidad temporal de O(n) y espacial de O(1)
 
-AGENTE COMENTADOR PROMT
+AGENTE COMENTADOR PROMPT
 Documenta el archivo adjunto, de manera coherente
 
-AGENTE EXPLICADOR PROMT
+AGENTE EXPLICADOR PROMPT
 Quiero que me explique a partir del codigo generado, 
 por que la estrategia utilizada es la mejor y por que no es 
 necesario ordenar el vector

@@ -3,10 +3,10 @@ Desarrolla en Java un programa interactivo por consola para buscar un valor ente
 Debe pedir la cantidad de elementos, validar que no sea negativa, leer los valores ordenados, pedir el valor a buscar y mostrar si existe, 
 su índice y cuántas comparaciones se realizaron. Si el vector está vacío, debe indicar que no puede buscarse
 
-PROMT AGENTE DOCUMENTADOR
+PROMPT AGENTE DOCUMENTADOR
 realiza la documentacion del codigo de manera clara y coherente
 
-PROMT AGENTE EXPLICADOR
+PROMPT AGENTE EXPLICADOR
 Explica por qué la estrategia de búsqueda binaria es más eficiente que una búsqueda lineal cuando los datos están ordenados.
 Incluye además el análisis de complejidad temporal y espacial que conlleva esta estrategia.
 

@@ -1,4 +1,4 @@
-PROMT AGENTE DESARROLLADOR
+PROMPT AGENTE DESARROLLADOR
 Desarrolla en Java un programa por consola que recorra un vector de enteros y cuente cuántas veces 
 aparece cada valor. El programa debe pedir la cantidad de elementos del vector, validar que no sea 
 negativa, leer los valores ingresados y luego recorrer el arreglo para contabilizar las ocurrencias 
@@ -7,11 +7,11 @@ Si el vector está vacío, debe indicar que no hay elementos para contar. La ló
 separarse de la interacción por consola para poder reutilizarla en otras partes del programa.
 
 
-PROMT AGENTE DOCUMENTADOR
+PROMPT AGENTE DOCUMENTADOR
 realiza la documentacion del codigo de manera clara y coherente
 
 
-PROMT AGENTE EXPLICADOR
+PROMPT AGENTE EXPLICADOR
 Explica a partir del siguiente codigo. Por que se debe recorrer el vector entero y haz un analisis 
 de la complejidad temporal y espacial que presenta el mismo.
 

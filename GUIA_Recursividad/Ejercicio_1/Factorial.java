@@ -94,7 +94,7 @@ public class Factorial {
         }
     }
 }
-/* PROMT CAMBIOS
+/* PROMPT CAMBIOS
 en caso de que el valor sea muy grande dar un mensaje de error
 Realice el cambio ya que el programa no reaccionaba al utilizar un valor grande como el 100
 */ 

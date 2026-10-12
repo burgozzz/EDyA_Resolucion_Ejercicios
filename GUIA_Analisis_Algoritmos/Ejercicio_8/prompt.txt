@@ -1,4 +1,4 @@
-PROMT AGENTE DESARROLLADOR
+PROMPT AGENTE DESARROLLADOR
 Desarrolla un codigo que permita realizar la suma de cada elemento que se 
 encuentra dentro de una matriz, recorriendo una vez cada elemento y contabilizando las operaciones 
 realizadas.El mismo debe tener una interaccion por consola que determine el tamaño de la matriz y 
@@ -6,7 +6,7 @@ la carga de valores aleatoria. El sistema debe verificar que no se ingresen tama
 0 o nulos, en tal caso dar un mensaje con dato invalido. La logica debe estar separada
 de la interaccion por consola para reutilizar el codigo
 
-PROMT AGENTE DOCUMENTADOR
+PROMPT AGENTE DOCUMENTADOR
 Documenta el codigo generado de manera clara y coherente
 
 PROMPT AGENTE EXPLICADOR

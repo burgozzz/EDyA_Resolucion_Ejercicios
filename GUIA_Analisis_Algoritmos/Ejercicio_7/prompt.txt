@@ -1,4 +1,4 @@
-PROMT AGENTE DESARROLLADOR(INVERTIR_VECTOR)
+PROMPT AGENTE DESARROLLADOR(INVERTIR_VECTOR)
 Desarrolla en Java un programa por consola en el archivo Invertir_Vector.java, 
 dentro de la clase Invertir_Vector. Implementa un método reutilizable invertirInSitu 
 que reciba un vector de enteros y lo invierta modificando el mismo arreglo, mediante 
@@ -9,7 +9,7 @@ de elementos, leer el vector y mostrarlo antes y después de invertirlo. No cree
 vector ni uses memoria adicional que crezca con el tamaño de la entrada. Verifica que el vector
 no sea nulo, y en caso de serlo mostrar un mensaje, diciendo que el mismo no se puede invertir
 
-PROMT AGENTE DESARROLLADOR(INVERTIR_VECTOR)
+PROMPT AGENTE DESARROLLADOR(INVERTIR_VECTOR)
 Desarrolla en Java un programa por consola en el archivo Invertir_Vector_MemAdicional.java, 
 dentro de la clase Invertir_Vector_MemAdicional. Implementa un método reutilizable 
 invertirConMemoriaAdicional que reciba un vector de enteros, cree y devuelva otro vector 
@@ -18,7 +18,7 @@ con los elementos en orden inverso, sin modificar el vector original. El método
 de la interacción por consola, que debe solicitar y validar la cantidad de elementos, leer el vector 
 y mostrar el original y el vector invertido. Considera los casos de vector vacío y de un solo elemento
 
-PROMT AGENTE DOCUMENTADOR
+PROMPT AGENTE DOCUMENTADOR
 Realiza una documentacion de los codigos, de manera clara y coherente
 
 PROMPT AGENTE EXPLICADOR
