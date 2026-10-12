@@ -22,7 +22,7 @@ package GUIA_PilasYColasArreglos.Ejercicio_3;
 
 import java.util.Scanner;
 
-public class ParentesisBalanceados {
+public class Parentesis_Balanceados {
 
 	private static final class PilaCaracteres {
 		private final char[] elementos;
