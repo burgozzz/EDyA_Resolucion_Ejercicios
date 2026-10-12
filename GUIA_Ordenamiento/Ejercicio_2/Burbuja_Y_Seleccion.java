@@ -37,7 +37,7 @@
  * La solución debe cumplir con la consigna general: explicar el algoritmo, describir el razonamiento, definir la entrada y salida, incluir comentarios en el código y validar el resultado con casos reales y claros.
  */
 
-package GUIA_Ordenamiento;
+package GUIA_Ordenamiento.Ejercicio_2;
 
 import java.util.Arrays;
 import java.util.Scanner;
