@@ -1,8 +1,8 @@
 /*
  * Prompt inicial utilizado:
- * Hola! Seguimos con la guía "Listas enlazadas simples con Java". Ahora el Ejercicio 7: modificar
- * un elemento de la lista.
  *
+ * Desarrolla un codigo en java que permita modificar el elemento de un nodo que se encuentra
+ * en una lista enlazada
  * El problema: a partir de mi lista enlazada simple de enteros, tengo que implementar el método
  * void modificar(int posicion, int nuevoDato) que cambie el dato almacenado en la posición
  * indicada (contando desde 0) por nuevoDato.
