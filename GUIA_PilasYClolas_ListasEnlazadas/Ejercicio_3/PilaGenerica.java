@@ -32,12 +32,8 @@
  *    de la pila almacenando tipos `Integer`, `String` y una clase de objeto propio que también
  *    debes crear.
  *
- * Importante: Como parte de la consigna, debes incluir todo este prompt inicial como un bloque de
- * comentarios en la parte superior del código generado.
- *
- * ==================================================================================
  * QUÉ ESTRUCTURA USO Y POR QUÉ
- * ==================================================================================
+
  * Implemento una PILA (LIFO: el último que entra es el primero que sale) sobre una lista enlazada
  * simple GENÉRICA. Uso pila y no cola porque una pila se atiende por un único extremo (el tope):
  * se apila y se desapila siempre por el mismo lado, lo que da el comportamiento LIFO (por ejemplo,
